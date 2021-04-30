@@ -5,7 +5,7 @@ import com.test.service.StudentService;
 
 import java.util.Scanner;
 
-public class StudentController {
+public class StudentController implements BaseController {
     StudentService studentService = new StudentService();
 
     //开启并展示菜单
@@ -61,7 +61,7 @@ public class StudentController {
 
     }
 
-    private void deleteStudent() {
+    public void deleteStudent() {
         studentService.deleteStudent(inputStudentId());
     }
 

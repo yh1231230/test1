@@ -2,8 +2,15 @@ package com.test.dao;
 
 import com.test.domain.Student;
 
-public class StudentDao {
+public class StudentDao implements BaseDao {
      static Student[] stus = new Student[5];
+
+     static {
+         Student s1=new Student("160577017","殷豪",22,"1201");
+         Student s2=new Student("160577019","pt",22,"1227");
+         stus[0]=s1;
+         stus[1]=s2;
+     }
 
     //新增数据
     public void addStudent(Student stu) {
