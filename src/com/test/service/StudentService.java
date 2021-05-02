@@ -1,12 +1,14 @@
 package com.test.service;
 
 
+import com.test.dao.BaseDao;
 import com.test.dao.StudentDao;
 import com.test.domain.Student;
+import com.test.factory.StudentDaoFactory;
 
 
 public class StudentService {
-    private StudentDao studentDao = new StudentDao();
+    private BaseDao studentDao = StudentDaoFactory.getStudentDao();
 
     public void addStudent(Student stu) {
         studentDao.addStudent(stu);

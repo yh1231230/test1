@@ -2,10 +2,13 @@ package com.test.entry;
 
 import com.test.controller.StudentController;
 
+
 import java.util.Scanner;
 
 public class Test {
+
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.println("----------欢迎使用信息管理系统----------");
